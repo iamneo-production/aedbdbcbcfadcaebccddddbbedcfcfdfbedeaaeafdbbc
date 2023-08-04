@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import {useState} from 'react';
 
 interface ButtonProps {
     onClick: () => void;
@@ -13,9 +13,6 @@ const ButtonFunc = (text) => {
         return text;
     }
 }
-
-
-
 
 const Button = (ButtonProps) => {
     return (<button onClick = {ButtonProps.onClick}>{ButtonProps.children}</button>);
